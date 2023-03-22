@@ -1,0 +1,111 @@
+body{
+    margin: 0px;
+}
+.menu{
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+.menu ul{
+    list-style: none;
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+.menu li {
+    float: left;
+}
+.menu .login{
+    float: right;
+}
+.menu li a{
+    padding: 20px 16px;
+    color: #f8f0f0;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+/* hover of actice */
+li a:hover{
+    background-color: rgb(44, 124, 31);
+}
+/* color of Login */
+.active{
+    background-color: rgb(123, 210, 36);
+}
+/* hover of title : morning E W*/
+li a:hover:not(.active){
+    background-color: rgb(169, 163, 42);
+}
+.content{
+    margin-top: 100px;
+}
+.content .title{
+    margin: 10px;
+}
+.title button{
+    background-color: rgb(105, 105, 236);
+    color: #f8f0f0;
+    border: 2px;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+.title button:hover{
+    background-color: blue;
+    color: rgb(210, 207, 243);
+
+}
+.header{
+    background-color: rgb(231, 223, 108);
+}
+.header img{
+    width: 80%;
+    margin-left:10% ;
+    
+}
+nav{
+    background-color: rgb(236, 177, 105);
+    width: 20%;
+    padding: 20px;
+}
+article{
+    background-color: rgb(119, 109, 97);
+    width: 80%;
+    padding: 20px;
+}
+section{
+    width: 100%;
+    display: flex;
+}
+footer{
+    background-color: bisque;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer img {
+    width: 50px;
+    height: 50px;
+
+}
+footer a{
+    display: inline;
+
+}
+footer .social{
+    text-align: center;
+}
+/* responsive menu */
+@media(max-width: 600px){
+    .menu li a{
+        padding: 25px 15px;
+        text-decoration: none;
+        color: #f4eded;
+        font-size: 25px;
+        text-align: center;
+        display: block;
+    }
+ }
